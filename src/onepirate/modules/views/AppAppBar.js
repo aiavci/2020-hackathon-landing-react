@@ -53,7 +53,7 @@ function AppAppBar(props) {
             {'Pharos'}
           </Link>
           <div className={classes.right}>
-            <Link
+            {/* <Link
               color="inherit"
               variant="h6"
               underline="none"
@@ -61,14 +61,22 @@ function AppAppBar(props) {
               href="/premium-themes/onepirate/sign-in/"
             >
               {'Sign In'}
+            </Link> */}
+            <Link
+              variant="h6"
+              underline="none"
+              className={clsx(classes.rightLink, classes.linkSecondary)}
+              href="https://docs.google.com/forms/d/1lR1RHZuaUlUxUx9adsK7fL84WqJYxWftRMVzz9mDJdM/prefill"
+            >
+              {'Have an idea?'}
             </Link>
             <Link
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="/premium-themes/onepirate/sign-up/"
+              href="https://docs.google.com/forms/d/1cQbB7MhwBxzcA-MSuCrc-O8jt04aa2JZUFQBQB73cn4/prefill"
             >
-              {'Sign Up'}
+              {'Sign Up Beta'}
             </Link>
           </div>
         </Toolbar>
