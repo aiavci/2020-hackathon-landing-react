@@ -79,32 +79,19 @@ export default function AppFooter() {
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item xs={6}>
-            <Grid
+          <Grid item xs={12} style={{ textAlign: "center" }}>
+            {/* <Grid
               container
               direction="column"
               justify="flex-end"
               className={classes.iconsWrapper}
               spacing={2}
-            >
-              <Grid item>
-                <Copyright />
-              </Grid>
-            </Grid>
+            > */}
+            {/* <Grid item> */}
+            <Copyright />
+            {/* </Grid> */}
           </Grid>
-          <Grid item xs={6}>
-            <Typography variant="h6" marked="left" gutterBottom>
-              Legal
-            </Typography>
-            <ul className={classes.list}>
-              <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/terms/">Terms</Link>
-              </li>
-              <li className={classes.listItem}>
-                <Link href="/premium-themes/onepirate/privacy/">Privacy</Link>
-              </li>
-            </ul>
-          </Grid>
+          {/* </Grid> */}
         </Grid>
       </Container>
     </Typography>

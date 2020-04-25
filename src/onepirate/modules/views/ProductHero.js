@@ -48,7 +48,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="/chat"
+        href="https://docs.google.com/forms/d/1cQbB7MhwBxzcA-MSuCrc-O8jt04aa2JZUFQBQB73cn4/prefill"
       >
         Register
       </Button>

@@ -71,12 +71,13 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>1.</div>
                 <img
-                  src="/productHowItWorks1.svg"
+                  src="/productHowItWorks3.svg"
                   alt="suitcase"
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Appointment every Wednesday 9am.
+                  Sign up to our platform with your basic information so that
+                  we can better assist you
                 </Typography>
               </div>
             </Grid>
@@ -84,12 +85,12 @@ function ProductHowItWorks(props) {
               <div className={classes.item}>
                 <div className={classes.number}>2.</div>
                 <img
-                  src="/productHowItWorks2.svg"
+                  src="/productHowItWorks3.svg"
                   alt="graph"
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  First come, first served. Our offers are in limited quantities, so be quick.
+                  Initialize chat with one of our agents
                 </Typography>
               </div>
             </Grid>
@@ -102,8 +103,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  {'New offers every week. New experiences, new surprises. '}
-                  {'Your Sundays will no longer be alike.'}
+                  {'We offer you services and guidance around your area '}
                 </Typography>
               </div>
             </Grid>
