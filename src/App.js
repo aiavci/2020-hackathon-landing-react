@@ -1,12 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Home from './onepirate/Home'
+import React from "react";
+import "./App.css";
+import Home from "./onepirate/Home";
+import Chat from "./onepirate/Chat";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Home/>
-    
+    <Router>
+      <Switch>
+        <Route path="/chat">
+          <Chat />
+        </Route>
+
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
