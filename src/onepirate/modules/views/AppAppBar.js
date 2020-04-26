@@ -66,7 +66,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="https://docs.google.com/forms/d/1lR1RHZuaUlUxUx9adsK7fL84WqJYxWftRMVzz9mDJdM/prefill"
+              href="https://forms.gle/UgQfb6WZH7U2cpJk8"
             >
               {'Have an idea?'}
             </Link>
@@ -74,7 +74,7 @@ function AppAppBar(props) {
               variant="h6"
               underline="none"
               className={clsx(classes.rightLink, classes.linkSecondary)}
-              href="https://docs.google.com/forms/d/1cQbB7MhwBxzcA-MSuCrc-O8jt04aa2JZUFQBQB73cn4/prefill"
+              href="https://forms.gle/woScpdV49N3DQsX76"
             >
               {'Sign Up Beta'}
             </Link>
