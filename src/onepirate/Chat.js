@@ -1,7 +1,7 @@
 import withRoot from "./modules/withRoot";
 // --- Post bootstrap -----
 import React from "react";
-import { Button, TextField, Grid } from "@material-ui/core";
+import { Button, TextField } from "@material-ui/core";
 import AppAppBar from "./modules/views/AppAppBar";
 
 function MessageBox({ author, body }) {
@@ -17,13 +17,7 @@ function MessageBox({ author, body }) {
         border: "solid",
       }}
     >
-      <Grid container>
-        <Grid item xs={3} >
-          panel
-        </Grid>
-        <Grid item xs={9}>
-        </Grid>
-      </Grid>
+      <div>{body}</div>
       <div style={{ textAlign: "end" }}>{author}</div>
     </div>
   );
