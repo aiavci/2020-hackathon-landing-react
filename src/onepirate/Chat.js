@@ -136,6 +136,22 @@ class Chat extends React.Component {
                   });
                 }, 1000);
               }
+
+              if (numMessages === 5) {
+                setTimeout(() => {
+                  this.setState({
+                    messages: [
+                      ...this.state.messages,
+                      {
+                        body:
+                          "This was a demo. We are in beta. Please sign up to our beta list from the 'sign up beta' button above!",
+                        author: "Assistant",
+                      },
+                    ],
+                    newMessage: "",
+                  });
+                }, 1000);
+              }
             }}
           >
             <TextField
