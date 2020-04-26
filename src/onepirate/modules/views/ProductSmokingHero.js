@@ -1,22 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import { withStyles } from '@material-ui/core/styles';
-import Typography from '../components/Typography';
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "@material-ui/core/Button";
+import Container from "@material-ui/core/Container";
+import { withStyles } from "@material-ui/core/styles";
+import Typography from "../components/Typography";
 
 const styles = (theme) => ({
   root: {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
     marginTop: theme.spacing(9),
     marginBottom: theme.spacing(9),
   },
   button: {
-    border: '4px solid currentColor',
+    border: "4px solid currentColor",
     borderRadius: 0,
-    height: 'auto',
+    height: "auto",
     padding: theme.spacing(2, 5),
   },
   link: {
@@ -33,13 +33,13 @@ function ProductSmokingHero(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Button className={classes.button}>
+      <div className={classes.button}>
         <Typography variant="h4" component="span">
-          Got any questions? Need help?
+          Got any questions? Please contact us
         </Typography>
-      </Button>
+      </div>
       <Typography variant="subtitle1" className={classes.link}>
-        We are here to help. Get in touch!
+        We are here to answer your questions and problems. Make yourself home!
       </Typography>
       {/* <img src="/producBuoy.svg" className={classes.buoy} alt="buoy" /> */}
     </Container>
