@@ -81,7 +81,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Sign up to our platform with your basic information so that we
+                  Shelters sign up to our platform with your basic information so that we
                   can better assist you
                 </Typography>
               </div>
@@ -95,7 +95,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Get in touch with your nearest shelters
+                  Get in touch with the nearest hotels with vacancy
                 </Typography>
               </div>
             </Grid>
@@ -108,7 +108,7 @@ function ProductHowItWorks(props) {
                   className={classes.image}
                 />
                 <Typography variant="h5" align="center">
-                  Our partner shelters will provide you the comfort, space and
+                  Our partner hotels will provide you the comfort, space and
                   necessities required
                 </Typography>
               </div>

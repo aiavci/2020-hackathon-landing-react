@@ -57,7 +57,7 @@ function ProductHero(props) {
         size="large"
         className={classes.button}
         component="a"
-        href="https://forms.gle/UgQfb6WZH7U2cpJk8"
+        href="/panel"
       >
         Get started
       </Button>
