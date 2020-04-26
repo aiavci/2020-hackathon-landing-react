@@ -118,10 +118,10 @@ class Chat extends React.Component {
                     ],
                     newMessage: "",
                   });
-                }, 1000);
-              }
 
-              if (numMessages === 3) {
+                  this.scrollToBottom();
+                }, 1000);
+              } else if (numMessages === 3) {
                 setTimeout(() => {
                   this.setState({
                     messages: [
@@ -134,10 +134,10 @@ class Chat extends React.Component {
                     ],
                     newMessage: "",
                   });
-                }, 1000);
-              }
 
-              if (numMessages === 5) {
+                  this.scrollToBottom();
+                }, 1000);
+              } else if (numMessages === 5) {
                 setTimeout(() => {
                   this.setState({
                     messages: [
@@ -150,7 +150,11 @@ class Chat extends React.Component {
                     ],
                     newMessage: "",
                   });
+
+                  this.scrollToBottom();
                 }, 1000);
+              } else {
+                this.scrollToBottom();
               }
             }}
           >
