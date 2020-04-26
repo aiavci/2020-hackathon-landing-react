@@ -9,11 +9,9 @@ import TextField from "../components/TextField";
 function Copyright() {
   return (
     <React.Fragment>
-      {"© "}
       <Link color="inherit" href="https://www.pharos.nevatec.ca">
-        Pharos
-      </Link>{" "}
-      {new Date().getFullYear()}
+        {"© "}Pharos {new Date().getFullYear()}
+      </Link>
     </React.Fragment>
   );
 }
@@ -79,7 +77,15 @@ export default function AppFooter() {
     <Typography component="footer" className={classes.root}>
       <Container className={classes.container}>
         <Grid container spacing={5}>
-          <Grid item xs={12} style={{ textAlign: "center" }}>
+          <Grid
+            item
+            xs={12}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              display: "flex",
+            }}
+          >
             {/* <Grid
               container
               direction="column"
@@ -88,7 +94,17 @@ export default function AppFooter() {
               spacing={2}
             > */}
             {/* <Grid item> */}
-            <Copyright />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <img src="/logo.png" style={{ maxWidth: "4em" }} />
+              <Copyright />
+            </div>
+
             {/* </Grid> */}
           </Grid>
           {/* </Grid> */}

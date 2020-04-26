@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import { withStyles } from '@material-ui/core/styles';
-import Link from '@material-ui/core/Link';
-import AppBar from '../components/AppBar';
-import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import React from "react";
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import { withStyles } from "@material-ui/core/styles";
+import Link from "@material-ui/core/Link";
+import AppBar from "../components/AppBar";
+import Toolbar, { styles as toolbarStyles } from "../components/Toolbar";
 
 const styles = (theme) => ({
   title: {
@@ -12,7 +12,7 @@ const styles = (theme) => ({
   },
   placeholder: toolbarStyles(theme).root,
   toolbar: {
-    justifyContent: 'space-between',
+    justifyContent: "space-between",
   },
   left: {
     flex: 1,
@@ -22,8 +22,8 @@ const styles = (theme) => ({
   },
   right: {
     flex: 1,
-    display: 'flex',
-    justifyContent: 'flex-end',
+    display: "flex",
+    justifyContent: "flex-end",
   },
   rightLink: {
     fontSize: 16,
@@ -43,15 +43,24 @@ function AppAppBar(props) {
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
           <div className={classes.left} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="inherit"
-            className={classes.title}
-            href="/"
-          >
-            {'Pharos'}
-          </Link>
+          <div style={{ maxWidth: "3em" }}>
+            <Link
+              variant="h8"
+              underline="none"
+              color="inherit"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                color: "black",
+              }}
+              href="/"
+            >
+              <img src="/logo.png" style={{ height: "3em" }} />
+              {"Pharos"}
+            </Link>
+          </div>
+
           <div className={classes.right}>
             {/* <Link
               color="inherit"
@@ -68,7 +77,7 @@ function AppAppBar(props) {
               className={clsx(classes.rightLink, classes.linkSecondary)}
               href="https://forms.gle/UgQfb6WZH7U2cpJk8"
             >
-              {'Have an idea?'}
+              {"Have an idea?"}
             </Link>
             <Link
               variant="h6"
@@ -76,7 +85,7 @@ function AppAppBar(props) {
               className={clsx(classes.rightLink, classes.linkSecondary)}
               href="https://forms.gle/woScpdV49N3DQsX76"
             >
-              {'Sign Up Beta'}
+              {"Sign Up Beta"}
             </Link>
           </div>
         </Toolbar>
